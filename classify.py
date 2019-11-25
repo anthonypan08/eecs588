@@ -16,8 +16,10 @@ with open("output.txt") as f :
 data = np.asarray(data.split(',')).astype(np.float)
 
 whitened = whiten(data)
-print (len(whitened))
+#print (len(whitened))
 bin = kmeans2(whitened,2)[1].reshape(args.dim[0], args.dim[1])
 print(bin)
+baseline = np.load('base.npy')
+print(np.sum(np.subtract(baseline, bin))/(args.dim[1] * args.dim[0]))
 pyplot.imshow(bin, cmap=pyplot.cm.gray)
 pyplot.show()

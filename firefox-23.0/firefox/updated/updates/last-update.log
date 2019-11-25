@@ -1,6 +1,6 @@
 Performing a background update
-SOURCE DIRECTORY /home/anthony/Desktop/eecs588/firefox/updates/0
-DESTINATION DIRECTORY /home/anthony/Desktop/eecs588/firefox/updated
+SOURCE DIRECTORY /home/anthony/Desktop/eecs588/firefox-23.0/firefox/updates/0
+DESTINATION DIRECTORY /home/anthony/Desktop/eecs588/firefox-23.0/firefox/updated
 UPDATE TYPE complete
 PREPARE REMOVEFILE webapprt/webapprt.ini
 PREPARE REMOVEFILE webapprt/omni.ja
